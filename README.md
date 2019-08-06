@@ -25,3 +25,6 @@
 - RPC框架关联SpringCloudAlibaba
 ## seata
 - 分布式事务
+## sentinel
+- 服务容错
+- 服务降级

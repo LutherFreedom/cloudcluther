@@ -2,7 +2,9 @@ package com.luther.cloud.zuul;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
+@EnableZuulProxy//开启Zuul的API网关功能
 @SpringBootApplication
 public class ZuulApplication {
 
