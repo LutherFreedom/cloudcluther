@@ -3,6 +3,7 @@ spring:
     name: eureka-center
 server:
   port: 8080
+
 eureka:
   client:
     # 检索服务的时长
@@ -12,4 +13,6 @@ eureka:
     # 是否心跳校验
     fetch-registry: false
     service-url:
-      defaultZone: http://${spring.application.name}:${server.port}
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  instance:
+    hostname: localhost

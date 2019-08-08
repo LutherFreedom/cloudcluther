@@ -4,3 +4,16 @@ spring:
 
 server:
   port: 5555
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8080/eureka/
+
+zuul:
+  routes:
+    api-a-url:
+      path: /api-a-url/**
+      serviceaId: provider2
